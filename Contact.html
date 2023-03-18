@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+  </head>
+
+  <body>
+    <h1>Sign-up Form Example</h1>
+
+    <form action="mailto:ritwikbasnet@gmail.com" enctype="text/plain" method="post">
+      <fieldset>
+        <legend>Please Fill the form below</legend>
+
+        <p>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Your Full Name" required>
+        </p>
+
+        <p>
+          <label for="mail">Email Address</label>
+          <input type="mail" name="mail" id="mail" placeholder="Enter Your Email Address" required>
+        </p>
+
+        <p>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter A Strong Password">
+        </p>
+
+        <p>
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </p>
+
+        <p>
+          <label for="dp">Recent Photo</label>
+          <input type="file" accept="image/*" name="dp" id="dp">
+        </p>
+
+
+        <p>
+        <h3>Selcet your gender</h3>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+
+        <label for="others">Others</label>
+        <input type="radio" name="others" id="others" value="others">
+        </p>
+
+        <p>
+        <h3>Select Your Hobbies</h3>
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="dancing" name="dancing" value="dancing">
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="inging" name="singing" value="singing">
+        <label for="cooking">Cooking</label>
+        <input type="checkbox" id="cooking" name="cooking" value="cooking">
+        <label for="treking">Treking</label>
+        <input type="checkbox" id="treking" name="treking" value="treking">
+        </p>
+
+        <p>
+          <label for="fav">Favourite Coffee</label>
+          <select name="fav" id="fav">
+            <optgroup label="Iced Coffee">
+              <option value="latte">Iced Latte</option>
+              <option value="Mocha">Iced Mocha</option>
+              <option value="Cappuchino">Iced Cappuchino</option>
+              <option value="Americano">Iced Americano</option>
+            </optgroup>
+
+            <optgroup label="Hot Coffee">
+              <option value="latte">Latte</option>
+              <option value="Mocha">Mocha</option>
+              <option value="Cappuchino">Cappuchino</option>
+              <option value="Americano">Americano</option>
+            </optgroup>
+          </select>
+        </p>
+
+        <p>
+          <label for="msg">Any Suggestions</label>
+          <br>
+          <textarea name="quries" id="quries" cols="30" rows="10" maxlength="100"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Submit</button>
+          <button type="Reset">Reset</button>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+
+</html>
